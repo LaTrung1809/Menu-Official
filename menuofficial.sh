@@ -9,6 +9,8 @@ reset='\033[0m'
 ENDCOLOR="\e[0m"
 underline_yellow='\033[4;33m'
 number='^[0-9]+$'
+while [ -z $keep ]; do
+clear
 printf "${green}   ____  __   __  __          __        \n"
 printf "  / / /_/ /_ / /_/ /  ___ ___/ /__ _  __\n"
 printf " / / __/ __// __/ _ \/ -_) _  / -_) |/ /\n"
@@ -64,3 +66,4 @@ case $choose in
 		exit
 		;;
 esac
+done
